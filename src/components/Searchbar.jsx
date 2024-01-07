@@ -8,6 +8,8 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import videobg from "../assets/videobg.mp4";
 import { useNavigate } from "react-router-dom";
+import { IoPerson } from "react-icons/io5";
+
 
 const Searchbar = () => {
   const [date, setDate] = useState([
@@ -39,23 +41,25 @@ const Searchbar = () => {
   }
   return (
     <div className="mt-12">
-    <div className="flex items-center justify-center">
+    <div className="flex  justify-center">
       <h1 className="text-5xl font-extrabold subpixel-antialiased  ">Explore More</h1>
     </div>
-      <div className=" m-2 lg:flex lg:flex-row flex-col justify-center">
-        <div className=" h-[50px] bg-white border-2 border-gray-400 flex items-center justify-between rounded-full absolute bottom:[-25px]  my-4">
-          <div className=" flex  items-center gap-[10px] py-2 ml-2">
-            <div className="flex items-center gap-2 ">
+      <div className="m-2 flex flex-row items-center justify-center ">
+        <div className=" bg-white border-2
+         border-gray-400  rounded-3xl p-5 md:px-2 lg:px-0 md:p-0 px-18  w-full md:w-auto mt-6 mx-2  ">
+          <div className=" flex flex-col md:flex-row items-center  w-full gap-1 ml-2">
+            <div className="flex items-center justify-center p-2 gap-2 border-b-2 md:border-none ">
               <FaSearch />
               <input
-                className=" outline-none border-none "
+                className=" outline-none border-none mr-2 "
                 type="text"
                 placeholder="Search for Hotels"
                 onChange={ (e) => setDestination (e.target.value)}
               />
             </div>
-            <div className="flex items-center gap-2">
-              <SlCalender />
+            <div className="flex
+             items-center gap-2 mr-6 p-2 md:p-0 border-b-2 md:border-none">
+              <SlCalender size={20} className=" lg:m-1"/>
               <span
                 className="text-gray-500 cursor-pointer text-sm  "
                 onClick={() => setOpen(!open)}
@@ -74,13 +78,13 @@ const Searchbar = () => {
                 />
               )}
             </div>
-            <div className="flex items-center gap-2">
-              <MdOutlineBedroomChild />
+            <div className="flex items-center gap-2 my-2 mr-6  p-1 md:p-0  border-b-2 md:border-none">
+              <MdOutlineBedroomChild size={20}/>
               <span
                 className="text-gray-500 cursor-pointer"
                 onClick={() => setOpenoptions(!openoptions)}
               >
-                {`${options.adult} adult.${options.children} children.${options.room} room`}
+                {`${options.adult}adult.${options.children}children.${options.room}room`}
               </span>
 
               {openoptions && (
@@ -145,7 +149,7 @@ const Searchbar = () => {
                 </div>
               )}
             </div>
-            <div className="flex items-center gap-2 border-2 rounded-full px-4 bg-red-400">
+            <div className="flex items-center gap-1 border-2 rounded-full px-4  bg-red-400">
               <button type="button" className="p-2" onClick={handleSearch}>
                 Search
               </button>

@@ -31,7 +31,7 @@ const Navbar = () => {
             className="flex items-center justify-center cursor-pointer"
           />
         </div>
-          <div className={ `${open ? "-translate-y-80" :"translate-y-0"} flex absolute flex-col bg-red-400 left-0 right-0 top-20 z-10 p-4  transition-transform  duration-300 `}>
+          <div className={ `${open ? "translate-y-0" : "-translate-y-80"} flex absolute flex-col bg-red-400 left-0 right-0 top-20 z-10 p-4  transition-transform  duration-300 `}>
             <div className=" flex justify-center md:hidden items-center text-xl">
               <ul className="flex flex-col gap-6 ">
                 <li>Discover</li>

@@ -88,7 +88,7 @@ const Searchbar = () => {
               </span>
 
               {openoptions && (
-                <div className="z-20 absolute top-[40px]  bg-white text-gray-800  rounded-md shadow-lg ">
+                <div className="z-20 absolute mt-[180px]  bg-white text-gray-800  rounded-md shadow-lg ">
                   <div className="flex justify-between m-3">
                     <span>Adult</span>
                     <div className="flex items-center gap-4 text-md text-black">

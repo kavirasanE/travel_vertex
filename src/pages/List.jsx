@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import HotelCard from "../components/utils/HotelCard";
+import HotelLists from "../components/HotelLists";
 
 const List = () => {
   const location = useLocation();
@@ -19,10 +20,10 @@ const List = () => {
     <div>
       <Navbar />
       <Searchbar />
-      <div className="flex justify-start ml-20 gap-12 mt-[150px]">
-        <div className="w-[140%] max-w-sm  flex ">
-          <div className="flex-1  rounded-lg sticky  top-[10px]">
-            <div className="bg-red-100 rounded-lg">
+      <div className="flex flex-col lg:flex-row justify-start ml-2 gap-12 mt-[150px]">
+        <div className="w-[100%] max-w-sm  flex ">
+          <div className="flex-1 rounded-lg sticky top-[10px]">
+            <div className="bg-red-100 rounded-lg ">
               <h1 className="text-lg font-semibold subpixel-antialiased mb-10 mt-2 text-center p-[10px] ">
                 Search
               </h1>
@@ -117,13 +118,16 @@ const List = () => {
           </div>
         </div>
 
-        <div className="flex-3 ">
+        <div className="grid ">
           <HotelCard />
           <HotelCard />
           <HotelCard />
           <HotelCard />
           <HotelCard />
           <HotelCard />
+          <div className="flex md:hidden">
+            <HotelLists/>
+          </div>
         </div>
       </div>
       <Footer />

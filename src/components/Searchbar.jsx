@@ -42,7 +42,7 @@ const Searchbar = () => {
     <div className="flex items-center justify-center">
       <h1 className="text-5xl font-extrabold subpixel-antialiased  ">Explore More</h1>
     </div>
-      <div className=" m-2 flex justify-center">
+      <div className=" m-2 lg:flex lg:flex-row flex-col justify-center">
         <div className=" h-[50px] bg-white border-2 border-gray-400 flex items-center justify-between rounded-full absolute bottom:[-25px]  my-4">
           <div className=" flex  items-center gap-[10px] py-2 ml-2">
             <div className="flex items-center gap-2 ">
@@ -57,7 +57,7 @@ const Searchbar = () => {
             <div className="flex items-center gap-2">
               <SlCalender />
               <span
-                className="text-gray-500 cursor-pointer"
+                className="text-gray-500 cursor-pointer text-sm  "
                 onClick={() => setOpen(!open)}
               >{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
                 date[0].endDate,
@@ -80,7 +80,7 @@ const Searchbar = () => {
                 className="text-gray-500 cursor-pointer"
                 onClick={() => setOpenoptions(!openoptions)}
               >
-                {`${options.adult} adult . ${options.children} children . ${options.room} room`}
+                {`${options.adult} adult.${options.children} children.${options.room} room`}
               </span>
 
               {openoptions && (

@@ -5,10 +5,10 @@ const HotelLists = () => {
   return (
     <div className="mt-24 w-[100%] max-width-[1024px] justify-between ">
       <div className=" flex items-center justify-center  ">
-        <h1 className="font-bold  text-5xl ">Hotels for you </h1>
+        <h1 className="font-bold  text-3xl md:text-5xl ">Hotels for you </h1>
       </div>
-      <div className=" grid grid-cols-4 ">
-        <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+        <div className="  mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"
@@ -31,7 +31,7 @@ const HotelLists = () => {
           </div>
       </div>
       </div>
-      <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className="  mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"
@@ -54,7 +54,7 @@ const HotelLists = () => {
           </div>
       </div>
       </div>
-      <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className="  mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"
@@ -77,7 +77,7 @@ const HotelLists = () => {
           </div>
       </div>
       </div>
-      <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className=" mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"
@@ -100,7 +100,7 @@ const HotelLists = () => {
           </div>
       </div>
       </div>
-      <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className="  mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"
@@ -123,7 +123,7 @@ const HotelLists = () => {
           </div>
       </div>
       </div>
-      <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className=" mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"
@@ -146,7 +146,7 @@ const HotelLists = () => {
           </div>
       </div>
       </div>
-      <div className=" w-[80%] mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
+      <div className=" mx-10 shadow-2xl drop-shadow-2xl rounded-xl my-4 mb-10">
           <img
             src={port}
             alt="image"

@@ -10,7 +10,7 @@ const Navbar = () => {
     <div>
       <div className=" flex flex-row justify-between p-5 px-16 font-bold text-black  ">
         <div className="flex items-center">
-          <h1 className="text-4xl ">TripView.</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl">TripView.</h1>
         </div>
         <div className=" hidden md:flex items-center text-xl">
           <ul className="flex  flex-row gap-6 ">

@@ -4,11 +4,11 @@ import port from "../assets/portfolio-1.png";
 const PropertyList = () => {
   return (
     <div className="mt-[50px]">
-      <div className="flex justify-start mx-10">
+      <div className="flex  justify-start mx-10">
         <h1 className="text-2xl font-semibold">Top Categories </h1>
       </div>
-      <div className="flex flex-row gap-10 mx-11">
-      <div className="w-1/2 h-[20rem] mt-5 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mx-11">
+      <div className=" h-[15rem] mt-5 ">
           <img
             src={port}
             alt="img"
@@ -18,7 +18,7 @@ const PropertyList = () => {
           <p className="text-lg text-center font-medium">100 places</p>
         
       </div>
-      <div className="w-1/2 h-[20rem] mt-5 ">
+      <div className="h-[15rem] mt-5 ">
           <img
             src={port}
             alt="img"
@@ -28,7 +28,7 @@ const PropertyList = () => {
           <p className="text-lg text-center font-medium">100 places</p>
         
       </div>
-      <div className="w-1/2 h-[20rem] mt-5 ">
+      <div className="h-[15rem] mt-5 ">
           <img
             src={port}
             alt="img"
@@ -38,7 +38,7 @@ const PropertyList = () => {
           <p className="text-lg text-center font-medium">100 places</p>
         
       </div>
-      <div className="w-1/2 h-[20rem] mt-5 ">
+      <div className="h-[15rem] mt-5 ">
           <img
             src={port}
             alt="img"
@@ -48,7 +48,7 @@ const PropertyList = () => {
           <p className="text-lg text-center font-medium">100 places</p>
         
       </div>
-      <div className="w-1/2 h-[20rem] mt-5 ">
+      <div className="h-[15rem] mt-5 ">
           <img
             src={port}
             alt="img"

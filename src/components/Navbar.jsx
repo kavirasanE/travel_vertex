@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,9 +21,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className=" hidden md:flex items-center ">
-          <button className=" px-4 py-2  bg-white hover:bg-black hover:text-white  rounded-full  ">
+          <Link to={"/login"} className=" px-4 py-2  bg-white hover:bg-black hover:text-white  rounded-full  ">
             Sign In
-          </button>
+          </Link>
         </div>
         <div className="flex md:hidden items-center justify-center">
           <RxHamburgerMenu
@@ -40,12 +41,12 @@ const Navbar = () => {
               </ul>
             </div>
             <div className=" md:hidden flex flex-col items-center my-2 p-2 mr-2">
-              <button
+              <Link to={"/login"}
                 className=" px-4 py-2  bg-white hover:bg-black hover:text-white rounded-full  duration-900"
                 onClick={() => setOpen(false)}
               >
                 Sign In
-              </button>
+              </Link>
             </div>
           </div>
       </div>

@@ -41,8 +41,8 @@ const Searchbar = () => {
   }
   return (
     <div className="mt-12">
-    <div className="flex  justify-center">
-      <h1 className="text-4xl md:text-5xl font-extrabold subpixel-antialiased  ">Explore More</h1>
+    <div className="flex justify-center">
+      <h1 className="text-4xl md:text-5xl font-extrabold subpixel-antialiased">Explore More</h1>
     </div>
       <div className="m-2 flex flex-row items-center justify-center ">
         <div className=" bg-white border-2
@@ -149,7 +149,7 @@ const Searchbar = () => {
                 </div>
               )}
             </div>
-            <div className="flex items-center gap-1 border-2 rounded-full px-4  bg-red-400">
+            <div className="flex items-center gap-1 border-2 rounded-full px-4 bg-red-400">
               <button type="button" className="p-2" onClick={handleSearch}>
                 Search
               </button>

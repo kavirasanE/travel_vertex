@@ -4,6 +4,10 @@ import List from "./pages/List";
 import Hotel from "./pages/Hotel";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import axios from 'axios'
+
+axios.defaults.baseURL ='http://localhost:3000';
+axios.defaults.withCredentials =true;
 
 export default function App() {
   return (

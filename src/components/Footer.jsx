@@ -36,7 +36,7 @@ const Footer = () => {
     <div className="border-b-2 border-black mx-4"></div>
     <div className="flex items-center justify-center mb-2 bg-amber-100 p-2 text-sm">
     {" "}
-    Copyright @2024 VertexView Solutions
+    Copyright @2024   
   </div>
   </>
   );
